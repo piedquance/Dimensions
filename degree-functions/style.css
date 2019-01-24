@@ -7,7 +7,7 @@ html, body {
 }
 canvas {
   display: block;
-  margin:auto;
+  margin: 6em auto;
 }
 div {
 margin:1em 0;
@@ -17,7 +17,7 @@ display: inline;
 margin:10em 0;
 }
 input {
-  width:10%;
+  width:2em;
   border:none;
   padding:0.1em;
   font-family: monospace;
