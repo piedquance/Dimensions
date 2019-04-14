@@ -1,24 +1,38 @@
 html, body {
-  background-color: #aaa;
+  background-color: #000;
   text-align: center;
   font-family: monospace;
+  margin:0;
+  height: 50em;
+}
+h1 {
+  margin:0;
+    color: #fff;
 }
 a {
   margin-top:4em;
-  text-decoration: none;
   color:#222;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:active {
   text-decoration: underline;
 }
 footer {
+  color: #fff;
   position:fixed;
-  width:100%;
+  width:50%;
+   left:25%;
   bottom:1em;
 }
 P {
   margin-bottom: 0.5em;
+}
+div {
+  padding: 1em 0;
+  margin: 1em auto;
+  background-color: #fff;
+  width: 25em;
+  height: 80%;
 }
