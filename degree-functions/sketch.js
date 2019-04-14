@@ -1,31 +1,35 @@
-
-let a = 2;
-let wi = 1;
-let b = 200;
-let h = b;
-let k = b;
+let zoom = 3;
+let deg = 2;
+let size = 200;
+let h = size;
+let k = size;
+let hh = 0;
+let kk = 0;
+let bb = 1;
+let aa = 1;
 function setup() {
-  createCanvas(b*2, b*2);
+  createCanvas(size*2, size*2);
 }
 function draw() {
-  a = document.querySelector("#aa").value;
+  zoom = document.querySelector("#zoom").value;
+  deg = document.querySelector("#deg").value;
+  hh = document.querySelector("#h").value;
+  kk = zoom*2 - Number(document.querySelector("#k").value);
+  bb = document.querySelector("#b").value;
+  aa = document.querySelector("#a").value;
   clear();
-  stroke(100);
+  fill('#555');
+  rect(0, 0, width, height);
+  stroke('#aaa');
   line(width/2, 0, width/2, width);
   line(0, width/2, width, width/2, );
-  fill(0, 10);
-  rect(0, 0, width, height);
-  stroke(0);
+  stroke('#aaa');
   noFill();
   beginShape();
-  for(var x = -h; x <= width; x+=wi) {
-    xx = x/(width/4);
-    let y = 4 - xx ** a;
-     vertex(xx*(width/4) + h, y*(width/4) - k);
+  for(var x = -h; x <= width; x+=1) {
+    xx = x/(width/(zoom*2));
+    let y = kk - (aa * ((bb * (xx - hh))**deg));
+     vertex(xx*(width/(zoom*2)) + h, y*(width/(zoom*2)) - k);
    }
    endShape();
   }
-function keyPressed() {
-  if (keyCode === 65) a = (a*10 + 1)/10;
-  else if (keyCode === 68) a = (a*10 - 1)/10;
-}
