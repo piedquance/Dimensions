@@ -1,4 +1,4 @@
 Different experiments with dimensions
 Current stuff:
-- Polynominal function viewer
-- The sound of silence
+- Power function viewer
+- Mandelbrot Set
