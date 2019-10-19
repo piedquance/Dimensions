@@ -10,7 +10,6 @@ h1 {
     color: #fff;
 }
 a {
-  margin-top:4em;
   color:#222;
 }
 a:hover {
@@ -19,6 +18,10 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+.links {
+  margin-bottom: 0;
+  margin-top:1em;
+}
 footer {
   color: #fff;
   position:fixed;
@@ -26,11 +29,12 @@ footer {
    left:25%;
   bottom:1em;
 }
+
 P {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 div {
-  padding: 1em 0;
+  padding: 0.5em 0;
   margin: 1em auto;
   background-color: #fff;
   width: 25em;
