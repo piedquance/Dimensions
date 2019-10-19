@@ -10,7 +10,8 @@ h1 {
     color: #fff;
 }
 a {
-  color:#222;
+  color:#fff;
+  text-decoration: underline;
 }
 a:hover {
   text-decoration: none;
@@ -30,13 +31,13 @@ footer {
   bottom:1em;
 }
 
-P {
+p {
   margin-bottom: 0.2em;
 }
 div {
   padding: 0.5em 0;
   margin: 1em auto;
-  background-color: #fff;
+  background-color: #111;
   width: 25em;
   height: 80%;
 }
