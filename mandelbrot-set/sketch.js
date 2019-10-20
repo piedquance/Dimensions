@@ -27,4 +27,4 @@ createCanvas(side, side);
             stroke(color);
             rect(x + side/2, y + side/2, 1, 1); } } }
 
-            window.addEventListener("load", () => { document.getElementById('canvas').appendChild(document.getElementById('defaultCanvas0' ) ) });
+            window.addEventListener("load", () => {document.getElementById('canvas').innerHTML = "" ; document.getElementById('canvas').appendChild(document.getElementById('defaultCanvas0' ) ) });
