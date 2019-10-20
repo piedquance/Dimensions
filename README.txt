@@ -1,4 +1,5 @@
 Different experiments with dimensions
 Current stuff:
-- Power function viewer
-- Mandelbrot Set
+- A power function viewer
+- A "star" generator
+- The Mandelbrot Set

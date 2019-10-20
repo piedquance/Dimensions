@@ -1,0 +1,27 @@
+html, body {
+  margin:0;
+  padding: 0;
+  background-color:#000
+}
+canvas {
+  display: block;
+  margin: auto;
+}
+footer {
+  font-family: monospace;
+  text-align: center;
+  position:fixed;
+  width:100%;
+  bottom:2em;
+}
+a {
+  margin-top:4em;
+  text-decoration: none;
+  color: #555;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
