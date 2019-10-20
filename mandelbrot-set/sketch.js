@@ -1,5 +1,5 @@
 let side = 800;
-let scale = 3;
+let scale = 2.5;
 let scaling = scale / (side/2);
 let rad = 5; 
 let colors = [
@@ -19,7 +19,7 @@ let colors = [
 const smallItr = (itr, arr) => itr % (arr.length)
 let iterations = 400;
 let k = 0;
-let h = 0;
+let h = -0.5;
 let itr = new Array(side, side);
 function setup() {
 createCanvas(side, side);
