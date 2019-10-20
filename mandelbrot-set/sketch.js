@@ -1,10 +1,10 @@
 let side = 800;
 let scale = 1.5;
 let scaling = scale / (side/2);
-let rad = 2; 
+let rad = 5; 
 let color;
-let iterations = 100;
-let k = 0;
+let iterations = 200;
+let k = 0.3;
 let h = -0.5;
 
 function setup() {
@@ -15,8 +15,8 @@ createCanvas(side, side);
     for(let x = -side/2; x < side/2; x++){
         for(let y = side/2; y > -side/2; y--){
             
-            const c = [(x * scaling) + h, y * scaling];
-            let z = [(x * scaling) + h, y * scaling];
+            const c = [(x * scaling) + h, y * scaling + k];
+            let z = [(x * scaling) + h, y * scaling + k];
 
             for(let int = 0; int < iterations; int = int + 2) {
               
