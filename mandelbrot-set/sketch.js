@@ -1,23 +1,9 @@
 let side = 800;
-let scale = 2.5;
+let scale = 1.5;
 let scaling = scale / (side/2);
-let rad = 5; 
-let colors = [
-    "#000",
-    "#111",
-    "#222",
-    "#333",
-    "#444",
-    "#555",
-    "#666",
-    "#777",
-    "#888",
-    "#999",
-    "#aaa",
-    "#bbb"
-];
+let rad = 2; 
 const smallItr = (itr, arr) => itr % (arr.length)
-let iterations = 400;
+let iterations = 100;
 let k = 0;
 let h = -0.5;
 let itr = new Array(side, side);
@@ -42,10 +28,16 @@ createCanvas(side, side);
                     int = iterations + 1;
                        } }
             if(Math.sqrt(z[iterations - 2]**2 + z[iterations - 1]**2) < rad) {
-                color = "#fff"} 
+                color = 0} 
             else {
-                color = colors[smallItr(itr[x + side/2][y + side/2], colors)]; 
+                color = (itr[x + side/2][y + side/2] * 500 / iterations); 
         //    console.log(itr[x + side/2][y + side/2]) 
     }
             stroke(color);
             rect(x + side/2, y + side/2, 1, 1); } } }
+
+
+            window.addEventListener("load", function(){
+                document.getElementById('canvas').appendChild(document.getElementById('defaultCanvas0'))
+            });
+
