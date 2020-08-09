@@ -18,20 +18,25 @@ h1 {
     left: 50%;
     margin-left: -37.5%;
 }
+
 a {
   color:#fff;
   text-decoration: underline;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 a:active {
   text-decoration: underline;
 }
+
 .links {
   margin-bottom: 0;
   margin-top:1em;
 }
+
 footer {
   color: #fff;
   position:fixed;
@@ -43,6 +48,7 @@ footer {
 p {
   margin-bottom: 0.2em;
 }
+
 div {
   padding: 0.5em 0;
   margin: 1em auto;
