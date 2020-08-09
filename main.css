@@ -3,11 +3,21 @@ html, body {
   text-align: center;
   font-family: monospace;
   margin:0;
-  height: 50em;
+  margin:0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  margin:auto;
 }
 h1 {
-  margin:0;
+  margin:10px 0 0 0;
     color: #fff;
+    width: 75%;
+    position: fixed;
+    left: 50%;
+    margin-left: -37.5%;
 }
 a {
   color:#fff;
@@ -37,7 +47,15 @@ p {
 div {
   padding: 0.5em 0;
   margin: 1em auto;
-  background-color: #111;
+  background-color: #0009;
   width: 25em;
-  height: 80%;
+  height: 60vh;
+}
+
+.center {
+  margin-top:10vh;
+  position: fixed;
+  width: 20%;
+  left: 50%;
+  margin-left: -10%;
 }
